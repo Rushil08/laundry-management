@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{url_for('static',filename='homepage.css')}}">
+  </head>
+    <div class="topnav">
+        <a class="active" href="{{url_for('page')}}">Home</a>
+        <a href="{{url_for('contacts')}}">Contacts</a>
+        <a href="{{url_for('deposit')}}">Deposit</a>
+        <a href="{{url_for('status')}}">Status</a>
+      </div>
+      <body>
+      <header>
+        <h1 id="welcome">Welcome {{value}}!</h1>
+        <div class="qrcode">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example" >
+      </div>
+      </header>
+    </body>
+      
+</html>

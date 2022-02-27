@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{url_for('static',filename='statusdecor.css')}}">
+  </head>
+    <div class="topnav">
+      <a href="{{url_for('page')}}">Home</a>
+      <a href="{{url_for('contacts')}}">Contacts</a>
+      <a href="{{url_for('deposit')}}">Deposit</a>
+      <a class="active" href="{{url_for('status')}}">Status</a>
+      </div>
+      <body>
+        <table>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            </tr>
+            <tr>
+              <td>T-shirts</td>
+              <td>{{tees}}</td>
+              </tr>
+              <tr>
+                <td>Pants</td>
+                <td>{{pant}}</td>
+              </tr>
+        </table><br>
+
+        
+        <p>confirmation: awaiting scan</p>
+      </body>
+</html>

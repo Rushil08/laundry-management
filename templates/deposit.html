@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{url_for('static',filename='depositdecor.css')}}">
+  </head>
+    <div class="topnav">
+      <a href="{{url_for('page')}}">Home</a>
+      <a href="{{url_for('contacts')}}">Contacts</a>
+      <a class="active" href="{{url_for('deposit')}}">Deposit</a>
+      <a href="{{url_for('status')}}">Status</a>
+      </div>
+
+      <form action="/dep" method='post'>
+        <div class="random">
+        <p>Enter No. of T-shirts:</p>
+        <input type="radio" id="tshirts" name="tees" value="1">
+        <label for="tshirts">1</label>
+        <input type="radio" id="tshirts" name="tees" value="2">
+        <label for="tshirts">2</label>
+        <input type="radio" id="tshirts" name="tees" value="3">
+        <label for="tshirts">3</label>
+        <input type="radio" id="tshirts" name="tees" value="4">
+        <label for="tshirts">4</label>
+        <input type="radio" id="tshirts" name="tees" value="5">
+        <label for="tshirts">5</label>
+        <input type="radio" id="tshirts" name="tees" value="6">
+        <label for="tshirts">6</label>
+        <input type="radio" id="tshirts" name="tees" value="7">
+        <label for="tshirts">7</label>
+        <input type="radio" id="tshirts" name="tees" value="8">
+        <label for="tshirts">8</label>
+        <input type="radio" id="tshirts" name="tees" value="9">
+        <label for="tshirts">9</label>
+        <input type="radio" id="tshirts" name="tees" value="10">
+        <label for="tshirts">10</label><br>
+
+        <p>Enter no. of Pants</p>
+        <input type="radio" id="pants" name="pant" value="1">
+        <label for="pants">1</label>
+        <input type="radio" id="pants" name="pant" value="2">
+        <label for="pants">2</label>
+        <input type="radio" id="pants" name="pant" value="3">
+        <label for="pants">3</label>
+        <input type="radio" id="pants" name="pant" value="4">
+        <label for="pants">4</label>
+        <input type="radio" id="pants" name="pant" value="5">
+        <label for="pants">5</label>
+        <input type="radio" id="pants" name="pant" value="6">
+        <label for="pants">6</label>
+        <input type="radio" id="pants" name="pant" value="7">
+        <label for="pants">7</label>
+        <input type="radio" id="pants" name="pant" value="8">
+        <label for="pants">8</label>
+        <input type="radio" id="pants" name="pant" value="9">
+        <label for="pants">9</label>
+        <input type="radio" id="pants" name="pant" value="10">
+        <label for="pants">10</label><br><br>
+        </div>
+
+        <div class="random2">
+        <input type="submit" value="submit">
+        </div>
+      </form>
+</html>

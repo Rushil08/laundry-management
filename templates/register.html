@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hello check</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <link href="{{url_for('static',filename='style.css')}}" rel="stylesheet">
+    <script src="website.js"></script>
+    <body>
+        <header> 
+            <h1>Login Portal</h1>
+        </header>
+        <main>
+            <form id="login_form" class="form_class" action="/savinginfo" method="post">
+                <div class="form_div">
+                    <label>Create Username:</label>
+                    <input id="username_create" class="field_class" name="username_create" type="text" placeholder="Create Username" autofocus>
+                  
+                    <label>Create Password:</label>
+                    <input id="password_create" class="field_class" name="password_create" type="password" placeholder="Create Password">
+                    <button type="submit" class="submit_class">Enter</button>
+                </div>
+                <div class="info_div">
+                    <p></p><a href="{{url_for('returntopage')}}">Return to login</a></p>
+                </div>
+            </form>
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+</html>
